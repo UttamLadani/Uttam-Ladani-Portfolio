@@ -362,6 +362,7 @@ body.loaded .rv-up { transform: none; }
 .project[data-i="3"] .d-bar i { background: var(--line); }
 .project[data-i="3"] .d-body { background: #fff; }
 .project[data-i="3"] .shot { object-fit: contain; }
+.project-demo-link { justify-content: center; margin-top: 16px; }
 .project.is-active .p-copy { opacity: 1; transform: none; transition-delay: .15s; }
 .project.is-active .device { opacity: 1; transform: rotateY(-12deg) rotateX(5deg); }
 .project.is-leaving .device { transform: rotateY(10deg) rotateX(5deg) translateX(-120px) scale(.9); opacity: 0; }
