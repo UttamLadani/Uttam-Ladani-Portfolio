@@ -362,7 +362,14 @@ body.loaded .rv-up { transform: none; }
 .project[data-i="3"] .d-bar i { background: var(--line); }
 .project[data-i="3"] .d-body { background: #fff; }
 .project[data-i="3"] .shot { object-fit: contain; }
-.project-demo-link { justify-content: center; padding: 0 16px 16px; }
+.project-demo-link { justify-content: center; padding: 0 16px 12px; }
+.project-demo-link a {
+  padding: 8px 16px;
+  border: 1px solid var(--red);
+  border-radius: 8px;
+  background: #fff;
+}
+.project-demo-link a:hover { background: var(--red); color: #fff; }
 .project.is-active .p-copy { opacity: 1; transform: none; transition-delay: .15s; }
 .project.is-active .device { opacity: 1; transform: rotateY(-12deg) rotateX(5deg); }
 .project.is-leaving .device { transform: rotateY(10deg) rotateX(5deg) translateX(-120px) scale(.9); opacity: 0; }
