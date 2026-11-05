@@ -340,6 +340,17 @@ body.loaded .rv-up { transform: none; }
 .project[data-i="1"] .d-bar i { background: var(--line); }
 .project[data-i="1"] .d-body { background: #fff; }
 .project[data-i="1"] .shot { object-fit: contain; }
+.project[data-i="2"] .device {
+  background: #fff;
+  box-shadow: 0 30px 60px -30px rgba(20, 25, 45, .35), 0 0 0 1px var(--line) inset;
+}
+.project[data-i="2"] .d-bar {
+  color: var(--muted);
+  background: #fff;
+}
+.project[data-i="2"] .d-bar i { background: var(--line); }
+.project[data-i="2"] .d-body { background: #fff; }
+.project[data-i="2"] .shot { object-fit: contain; }
 .project.is-active .p-copy { opacity: 1; transform: none; transition-delay: .15s; }
 .project.is-active .device { opacity: 1; transform: rotateY(-12deg) rotateX(5deg); }
 .project.is-leaving .device { transform: rotateY(10deg) rotateX(5deg) translateX(-120px) scale(.9); opacity: 0; }
