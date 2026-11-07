@@ -389,9 +389,6 @@ body.loaded .rv-up { transform: none; }
 .ms-item:nth-child(2n) b { background: rgba(255, 255, 255, .55); }
 .ms-item s { height: 5px; width: 70%; border-radius: 3px; background: rgba(255, 255, 255, .5); }
 .ms-item em { font-style: normal; font-weight: 700; font-size: 11px; }
-.ms-cart { position: absolute; left: 16px; right: 16px; bottom: 14px; display: flex; justify-content: space-between; align-items: center; background: #fff; color: var(--ink); border-radius: 10px; padding: 9px 12px; font-weight: 600; }
-.ms-cart strong { color: var(--red); }
-
 .ml-h { font-family: var(--f-display); font-size: 22px; text-transform: uppercase; margin-bottom: 12px; }
 .ml-row { display: grid; grid-template-columns: 1.2fr 2fr 36px; gap: 10px; align-items: center; padding: 9px 10px; border-radius: 9px; background: rgba(255, 255, 255, .14); margin-bottom: 7px; font-weight: 500; }
 .ml-bar { height: 6px; border-radius: 6px; background: rgba(255, 255, 255, .25); overflow: hidden; }
