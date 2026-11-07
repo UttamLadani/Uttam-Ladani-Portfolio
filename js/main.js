@@ -20,23 +20,6 @@
 
   $$('.yr').forEach(el => (el.textContent = new Date().getFullYear()));
 
-  /* ---------- Color theme ---------- */
-  const themeToggle = $('.theme-toggle');
-  const savedTheme = localStorage.getItem('portfolio-theme');
-  const applyTheme = theme => {
-    body.dataset.theme = theme;
-    const dark = theme === 'dark';
-    themeToggle.setAttribute('aria-pressed', dark);
-    themeToggle.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
-    themeToggle.querySelector('span').textContent = dark ? '☀' : '☾';
-  };
-  applyTheme(savedTheme === 'dark' ? 'dark' : 'light');
-  themeToggle.addEventListener('click', () => {
-    const theme = body.dataset.theme === 'dark' ? 'light' : 'dark';
-    applyTheme(theme);
-    localStorage.setItem('portfolio-theme', theme);
-  });
-
   /* ---------- Scenes: drive the travelling portrait + nav ---------- */
   const navMap = { home: null, about: 'about', work: 'work', journey: 'journey', orbit: 'toolkit', layers: 'toolkit', awards: 'awards', contact: 'contact' };
   const navLinks = $$('.nav-links a');

@@ -30,18 +30,6 @@
   --o: 1;
 }
 
-[data-theme="dark"] {
-  --bg: #111216;
-  --paper: #1D1F25;
-  --ink: #F3F1EC;
-  --ink-2: #B7B7C0;
-  --muted: #858692;
-  --line: rgba(243, 241, 236, .16);
-  --red-soft: #4B2024;
-  --dark: #08090C;
-  color-scheme: dark;
-}
-
 *,
 *::before,
 *::after { box-sizing: border-box; }
@@ -57,7 +45,6 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
-  transition: background-color .35s ease, color .35s ease;
 }
 
 img { display: block; max-width: 100%; }
@@ -145,7 +132,6 @@ h1, h2, h3, h4, p, dl, dd { margin: 0; }
   border: 1px solid rgba(18, 18, 22, .06);
   transition: background .5s, border-color .5s;
 }
-[data-theme="dark"] .nav-links { background: rgba(29, 31, 37, .82); border-color: rgba(243, 241, 236, .12); }
 .nav-links a {
   position: relative; z-index: 1;
   padding: 8px 16px; border-radius: 999px;
@@ -166,17 +152,6 @@ body[data-scene="contact"] .logo span { color: #fff; }
 body[data-scene="contact"] .nav-links { background: rgba(255, 255, 255, .12); border-color: rgba(255, 255, 255, .2); }
 body[data-scene="contact"] .nav-pill { background: #fff; box-shadow: none; }
 body[data-scene="contact"] .nav-links a.is-active { color: var(--red); }
-
-.theme-toggle {
-  width: 40px; height: 40px; margin-left: auto; margin-right: 10px;
-  border: 1px solid var(--line); border-radius: 50%;
-  background: var(--paper); color: var(--ink);
-  cursor: pointer; font-size: 20px; line-height: 1;
-  transition: background .3s, color .3s, border-color .3s, transform .3s;
-}
-.theme-toggle:hover { transform: rotate(12deg); }
-.theme-toggle span { display: block; transform: translateY(-1px); }
-[data-theme="dark"] .theme-toggle span { transform: translateY(-1px) rotate(180deg); }
 
 .menu-btn {
   display: none; width: 44px; height: 44px; border-radius: 50%;
@@ -678,7 +653,6 @@ body.loaded .rv-up { transform: none; }
   .stage, .cursor { display: none; }
   .nav { padding: 16px 20px; }
   .nav-links { display: none; }
-  .theme-toggle { margin-right: 8px; }
   .menu-btn { display: block; }
   .m-photo { display: block; height: auto; }
 
