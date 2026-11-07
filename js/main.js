@@ -208,6 +208,7 @@
   const toggleMenu = open => {
     body.classList.toggle('menu-open', open);
     menuBtn.setAttribute('aria-expanded', open);
+    menuBtn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
     menu.setAttribute('aria-hidden', !open);
   };
   menuBtn.addEventListener('click', () => toggleMenu(!body.classList.contains('menu-open')));

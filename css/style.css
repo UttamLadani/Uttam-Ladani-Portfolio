@@ -115,7 +115,7 @@ h1, h2, h3, h4, p, dl, dd { margin: 0; }
    NAV
    ========================================================= */
 .nav {
-  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  position: fixed; top: 0; left: 0; right: 0; z-index: 120;
   display: flex; align-items: center; justify-content: space-between;
   padding: 22px var(--pad);
   transition: color .5s;
