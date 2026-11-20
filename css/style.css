@@ -226,7 +226,7 @@ body[data-scene="contact"] { --x: 0vw;   --s: .94;  --o: 1; }
 /* ---------- 00 HERO ---------- */
 .hero { display: flex; flex-direction: column; justify-content: center; padding: 120px var(--pad) 120px; }
 .hero-bigname {
-  top: 9vh; right: -1.5vw;
+  top: max(9vh, 96px); right: -1.5vw;
   font-family: var(--f-display);
   font-size: 23vw; line-height: .8;
   color: var(--red);
